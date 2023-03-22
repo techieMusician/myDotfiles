@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =6
+let g:netrw_dirhist_6='/home/mike/cs50/lab2/scrabble'
+let g:netrw_dirhist_5='/home/mike/cs50/prob2/readability'
+let g:netrw_dirhist_4='/home/mike/cs50/prob2'
+let g:netrw_dirhist_3='/home/mike/cs50'
+let g:netrw_dirhist_2='/home/mike/cs50/lab2'
+let g:netrw_dirhist_1='/home/mike/cs50/prob1/cash'

@@ -1,0 +1,9 @@
+[submodule ".vim/pack/plugins/start/fzf-hoogle.vim"]
+	path = .vim/pack/plugins/start/fzf-hoogle.vim
+	url = https://github.com/monkoose/fzf-hoogle.vim.git
+[submodule ".vim/pack/plugins/start/fzf.vim"]
+	path = .vim/pack/plugins/start/fzf.vim
+	url = https://github.com/junegunn/fzf.vim.git
+[submodule ".vim/pack/plugins/start/org.vim"]
+	path = .vim/pack/plugins/start/org.vim
+	url = https://github.com/axvr/org.vim.git
