@@ -52,7 +52,7 @@ set showmode
 set wildoptions=pum
 
 # Set colorscheme
-colorscheme desert
+set background=dark
 # Set tabs to spaces
 set expandtab
 # Set tab size to 4 spaces
