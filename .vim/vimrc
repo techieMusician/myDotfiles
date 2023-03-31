@@ -53,6 +53,7 @@ set wildoptions=pum
 
 # Set colorscheme
 set background=dark
+colorscheme torte
 # Set tabs to spaces
 set expandtab
 # Set tab size to 4 spaces
