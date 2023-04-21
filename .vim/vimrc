@@ -60,3 +60,6 @@ set expandtab
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
+
+# Make :grep run ripgrep to search files
+set grepprg=rg\ --vimgrep\ --smart-case\ --follow
