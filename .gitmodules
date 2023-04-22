@@ -13,6 +13,3 @@
 [submodule "/home/mike/.vim/pack/plugins/start/vimspector"]
 	path = /home/mike/.vim/pack/plugins/start/vimspector
 	url = https://github.com/puremourning/vimspector.git
-[submodule "/home/mike/.vim/pack/plugins/start/vimwiki"]
-	path = /home/mike/.vim/pack/plugins/start/vimwiki
-	url = https://github.com/vimwiki/vimwiki.git
