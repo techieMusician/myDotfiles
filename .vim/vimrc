@@ -63,3 +63,15 @@ set softtabstop=4
 
 # Make :grep run ripgrep to search files
 set grepprg=rg\ --vimgrep\ --smart-case\ --follow
+
+# Settings for Calendar.Vim
+
+# Google Calendar Integration
+g:calendar_google_calendar = 1
+
+# Google Tast Integration
+g:calendar_google_task = 1
+
+# Get Credentials from .cach/calendar.vim/credentials.vim
+source ~/.cache/calendar.vim/credentials.vim
+
