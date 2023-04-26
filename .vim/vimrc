@@ -75,3 +75,8 @@ g:calendar_google_task = 1
 # Get Credentials from .cach/calendar.vim/credentials.vim
 source ~/.cache/calendar.vim/credentials.vim
 
+# Wiki.vim Settings
+
+# Set root directory for wiki
+g:wiki_root = '~/wiki'
+
