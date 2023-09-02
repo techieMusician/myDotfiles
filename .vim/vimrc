@@ -80,3 +80,8 @@ source ~/.cache/calendar.vim/credentials.vim
 # Set root directory for wiki
 g:wiki_root = '~/wiki'
 
+# Vimperator Settings
+
+# Enable 'Human' mappings
+g:vimspector_enable_mappings = 'HUMAN'
+
