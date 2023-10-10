@@ -7,3 +7,12 @@
 [submodule ".vim/pack/plugins/start/org.vim"]
 	path = .vim/pack/plugins/start/org.vim
 	url = https://github.com/axvr/org.vim.git
+[submodule "/home/mike/.vim/pack/plugins/start/calendar.vim"]
+	path = /home/mike/.vim/pack/plugins/start/calendar.vim
+	url = https://github.com/itchyny/calendar.vim.git
+[submodule "/home/mike/.vim/pack/plugins/start/vimspector"]
+	path = /home/mike/.vim/pack/plugins/start/vimspector
+	url = https://github.com/puremourning/vimspector.git
+[submodule ".vim/pack/plugins/start/wiki.vim"]
+	path = .vim/pack/plugins/start/wiki.vim
+	url = https://github.com/lervag/wiki.vim.git
