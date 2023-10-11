@@ -98,7 +98,9 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 
 # Alias definitions.
 # add alias config to access git bare tree of configfiles
-alias config='/usr/bin/git --git-dir=/home/mike/.cfg/ --work-tree=/home/mike'
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+# add alias nvim for nvim.appimage
+alias nvim="$HOME/bin/nvim.appimage"
 # You may want to put all your additions into a separate file like
 # ~/.bash_aliases, instead of adding them here directly.
 # See /usr/share/doc/bash-doc/examples in the bash-doc package.
