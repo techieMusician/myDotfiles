@@ -3,7 +3,7 @@
 # for examples
 
 if [ "$HOSTNAME" = "DESKTOP-JFSITV1" ]; then
-    source $HOME/.bashrc_wslDELL
+    source $HOME/.bashrc_wslDell
 
 elif [ "$HOSTNAME" = "lunamusic" ]; then
     source $HOME/.bashrc_linux
