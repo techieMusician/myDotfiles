@@ -98,9 +98,9 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 
 # Alias definitions.
 # add alias config to access git bare tree of configfiles
-alias config='/usr/bin/git --git-dir=~/.cfg/ --work-tree=~'
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 # add alias nvim for nvim.appimage
-alias nvim="~/bin/nvim.appimage"
+alias nvim="$HOME/bin/nvim.appimage"
 # You may want to put all your additions into a separate file like
 # ~/.bash_aliases, instead of adding them here directly.
 # See /usr/share/doc/bash-doc/examples in the bash-doc package.
@@ -121,9 +121,9 @@ if ! shopt -oq posix; then
 fi
 
 # add .cargo to path
-export PATH="{$PATH}:~/.cargo/bin" 
+export PATH="{$PATH}:$HOME/.cargo/bin" 
 # add bin in home to path
-export Path="{$PATH}:~/bin/"
+export Path="{$PATH}:$HOME/bin/"
 # add make settings for cs50
 export CC="clang"
 export CFLAGS="-fsanitize=signed-integer-overflow -fsanitize=undefined -ggdb3 -O0 -std=c11 -Wall -Werror -Wextra -Wno-sign-compare -Wno-unused-parameter -Wno-unused-variable -Wshadow"
