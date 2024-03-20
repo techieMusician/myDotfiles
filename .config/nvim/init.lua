@@ -26,7 +26,17 @@ local plugins = {
 { "folke/which-key.nvim"},
 { "nvim-telescope/telescope.nvim", branch = '0.1.x',
     dependencies = { "nvim-lua/plenary.nvim" }},
-{ "nvim-treesitter/nvim-treesitter", build = ":TSUpdate"}
+{ "nvim-treesitter/nvim-treesitter", build = ":TSUpdate"},
+{
+    "nvim-neo-tree/neo-tree.nvim",
+    branch = "v3.x",
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+      "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
+      "MunifTanjim/nui.nvim",
+      "3rd/image.nvim", -- Optional image support in preview window: See `# Preview Mode` for more information
+    }
+}
 }
 local opts = {}
 
@@ -43,6 +53,7 @@ vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
 vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
 vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
 
+vim.keymap.set('n', '<C-n>', ':Neotree filesystem reveal left<CR>', {})
 local configs = require("nvim-treesitter.configs")
 configs.setup({
   ensure_installed = { "c", "lua", "vim", "vimdoc", "python", "html" },
