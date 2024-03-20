@@ -1,13 +1,3 @@
-vim.cmd("set expandtab")
-vim.cmd("set tabstop=2")
-vim.cmd("set softtabstop=2")
-vim.cmd("set shiftwidth=2")
-
--- set leader key early so keybindings are correct
-vim.g.mapleader = " "
-vim.g.maplocalleader = "\\"
-
-
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
   vim.fn.system({
@@ -21,44 +11,7 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-local plugins = {
-{ "catppuccin/nvim", name = "catppuccin", priority = 1000 },
-{ "folke/which-key.nvim"},
-{ "nvim-telescope/telescope.nvim", branch = '0.1.x',
-    dependencies = { "nvim-lua/plenary.nvim" }},
-{ "nvim-treesitter/nvim-treesitter", build = ":TSUpdate"},
-{
-    "nvim-neo-tree/neo-tree.nvim",
-    branch = "v3.x",
-    dependencies = {
-      "nvim-lua/plenary.nvim",
-      "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
-      "MunifTanjim/nui.nvim",
-      "3rd/image.nvim", -- Optional image support in preview window: See `# Preview Mode` for more information
-    }
-}
-}
-local opts = {}
+require("vim-options")
+require("lazy").setup("plugins")
 
-require("lazy").setup(plugins, opts)
 
-require("catppuccin").setup({
-  flavour = "mocha",
-})
-
--- setup keybindings for Telescope
-local builtin = require('telescope.builtin')
-vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
-vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
-vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
-vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
-
-vim.keymap.set('n', '<C-n>', ':Neotree filesystem reveal left<CR>', {})
-local configs = require("nvim-treesitter.configs")
-configs.setup({
-  ensure_installed = { "c", "lua", "vim", "vimdoc", "python", "html" },
-  highlight = { enable = true },
-  indent = { enable = true },
-})
-
-vim.cmd.colorscheme "catppuccin"
