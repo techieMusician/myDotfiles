@@ -1,5 +1,3 @@
 return {
-  "renerocksai/calendar-vim"
+  "renerocksai/calendar-vim",
 }
-
-

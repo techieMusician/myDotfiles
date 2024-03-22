@@ -1,11 +1,11 @@
 return {
-  'renerocksai/telekasten.nvim',
-  dependencies = {'nvim-telescope/telescope.nvim'},
+  "renerocksai/telekasten.nvim",
+  dependencies = { "nvim-telescope/telescope.nvim" },
   config = function()
-    require('telekasten').setup({
+    require("telekasten").setup({
       home = vim.fn.expand("~/zettelkasten"), -- Put the name of your notes directory here
       dailies = vim.fn.expand("~/zettelkasten/dailies"),
-      weeklies = vim.fn.expand("~/zettelkasten/weeklies")
+      weeklies = vim.fn.expand("~/zettelkasten/weeklies"),
     })
-  end
-  }
+  end,
+}
