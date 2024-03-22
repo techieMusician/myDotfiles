@@ -1,6 +1,7 @@
 {
     "diagnostics.globals": [
         "vim",
-        "wk"
+        "wk",
+        "NOP"
     ]
 }
