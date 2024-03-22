@@ -20,6 +20,7 @@ return {
     config = function()
       local lspconfig = require("lspconfig")
       lspconfig.lua_ls.setup({})
+      lspconfig.marksman.setup({})
       vim.keymap.set("n", "K", vim.lsp.buf.hover, { desc = "Display Hover Info" })
       vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, { desc = "Go to Definition" })
       vim.keymap.set("n", "<leader>gr", vim.lsp.buf.references, { desc = "Go to Reference" })
