@@ -141,6 +141,7 @@ screens = [
                 widget.Systray(),
                 widget.Battery(),
                 widget.Clock(format='%Y-%m-%d %a %I:%M %p'),
+                widget.Volume(),
                 widget.QuickExit(),
             ],
             24,
