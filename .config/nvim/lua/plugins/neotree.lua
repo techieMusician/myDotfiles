@@ -7,8 +7,9 @@ return {
 		"MunifTanjim/nui.nvim",
 		"3rd/image.nvim", -- Optional image support in preview window: See `# Preview Mode`
 	},
-	config = function()
-		vim.keymap.set("n", "<C-n>", ":Neotree filesystem reveal left<CR>", {})
-		vim.keymap.set("n", "<leader>bf", ":Neotree buffers reveal float<CR>", {})
-	end,
+  keys = {
+    { "<C-n>", "<cmd>Neotree filesystem reveal left<CR>", desc = "Open Neotree to left" },
+    { "<leader>bf", "<cmd>Neotree buffers reveal float<CR>", desc = "Reaveal buffers in floating window" },
+    { "<leader>b", desc = "Buffer functions" },
+  }
 }

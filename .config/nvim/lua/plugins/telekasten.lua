@@ -11,6 +11,7 @@ return {
     { "<leader>zb", "<cmd>Telekasten show_backlinks<CR>",  desc = "Show Backlinks" },
     { "<leader>zI", "<cmd>Telekasten insert_img_link<CR>", desc = "Insert Image Link" },
     { "<C-t>",      "<cmd>Telekasten toggle_todo<CR>",     mode = { "n", "i" },         desc = "Togle Todo" },
+    { "<leader>z", desc = "Telekasten"},
   },
   config = function()
     require("telekasten").setup({
