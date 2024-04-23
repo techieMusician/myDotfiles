@@ -1,5 +1,5 @@
 return {
-  "nvim-treesitter/nvim-treesitter",
+  {  "nvim-treesitter/nvim-treesitter",
   build = ":TSUpdate",
   config = function()
     local config = require("nvim-treesitter.configs")
@@ -9,4 +9,8 @@ return {
       indent = { enable = true },
     })
   end,
+  },
+  {
+  "HiPhish/rainbow-delimiters.nvim",
+  },
 }
