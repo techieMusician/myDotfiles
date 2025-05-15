@@ -24,3 +24,4 @@ export LDLIBS="-lcrypt -lcs50 -lm"
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 # add alias to use config with nvim
 alias confignvim='GIT_DIR=$HOME/.cfg GIT_WORK_TREE=$HOME nvim'
+alias info='info --vi-keys'
