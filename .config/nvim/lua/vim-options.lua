@@ -7,5 +7,7 @@ vim.cmd("set number")
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 
--- Set clipboard to unamed so I can copy and paste with outside programes
+-- Set clipboard to unnamed so I can copy and paste with outside programs
 vim.cmd("set clipboard=unnamed")
+-- Turn off lsp logarithms
+vim.lsp.set_log_level("off") -- Or "warn", "error", "off"
