@@ -10,6 +10,7 @@ PS1='[\u@\h \W]$(gitprompt-rs)\$ '
 export EDITOR="nvim"
 export VISUAL="nvim"
 export PATH="${PATH}:$HOME.local/bin"
+export Browser="firefox"
 
 [ -f "$HOME/.ghcup/env" ] && source "$HOME/.ghcup/env" # ghcup-env
 [ -f "/usr/share/fzf/key-bindings.bash" ] && source "/usr/share/fzf/key-bindings.bash" # fzf settings
