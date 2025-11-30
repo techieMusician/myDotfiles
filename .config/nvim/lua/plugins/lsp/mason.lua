@@ -8,6 +8,7 @@ return {
         "html",
         "cssls",
         "phpactor",
+        "ts_ls",
         },
     },
     dependencies = {
