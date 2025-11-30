@@ -1,12 +1,27 @@
 return {
-    "mason-org/mason.nvim",
+    "mason-org/mason-lspconfig.nvim",
     opts = {
-        ui = {
-            icons = {
+        ensure_installed = {
+        "lua_ls",
+        "rust_analyzer",
+        "marksman",
+        "html",
+        "cssls",
+        "phpactor",
+        },
+    },
+    dependencies = {
+        { "mason-org/mason.nvim",
+          opts = {
+            ui = {
+              icons = {
                 package_installed = "✓",
                 package_pending = "➜",
                 package_uninstalled = "✗"
-            }
-        }
-    }
+              },
+            },
+          },
+        },
+        "neovim/nvim-lspconfig",
+    },
 }
