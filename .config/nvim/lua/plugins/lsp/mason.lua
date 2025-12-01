@@ -7,8 +7,8 @@ return {
         "marksman",
         "html",
         "cssls",
-        "phpactor",
         "ts_ls",
+        "intelephense",
         },
     },
     dependencies = {
