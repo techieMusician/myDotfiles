@@ -11,3 +11,5 @@ vim.g.maplocalleader = "\\"
 vim.cmd("set clipboard=unnamed")
 -- Turn off lsp logarithms
 vim.lsp.set_log_level("off") -- Or "warn", "error", "off"
+--vim.g.vinfo_repo_path = "/usr/share/info"
+vim.g.infoprg = "/usr/bin/info"

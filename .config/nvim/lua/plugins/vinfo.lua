@@ -1,1 +1,4 @@
-return { "alx741/vinfo" }
+return {
+--"alx741/vinfo",
+"hiphish/info.vim",
+}
