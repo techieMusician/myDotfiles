@@ -10,6 +10,6 @@ vim.g.maplocalleader = "\\"
 -- Set clipboard to unnamed so I can copy and paste with outside programs
 vim.cmd("set clipboard=unnamed")
 -- Turn off lsp logarithms
-vim.lsp.set_log_level("off") -- Or "warn", "error", "off"
+vim.lsp.log.set_level("off") -- Or "warn", "error", "off"
 -- vim.g.vinfo_repo_path = "/usr/share/info"
 -- vim.g.infoprg = "info"
