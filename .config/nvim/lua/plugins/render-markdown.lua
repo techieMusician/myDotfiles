@@ -6,9 +6,6 @@ return {
     ---@module 'render-markdown'
     ---@type render.md.UserConfig
     opts = {
-        heading = {
-            border = true,
-        },
         indent = {
             -- Mimic org-indent-mode behavior by indenting everything under a heading based on the
             -- level of the heading. Indenting starts from level 2 headings onward by default.
@@ -30,6 +27,15 @@ return {
             priority = 0,
             -- Applied to icon.
             highlight = "RenderMarkdownIndent",
+        },
+        win_options = {
+          wrap = { default = true, rendered = true },
+          breakindent = { default = true, rendered = true },
+          breakindentopt = { default = '', rendered = 'shift:8' },
+          linebreak = { default = true, rendered = true},
+        },
+        heading = {
+            border = true,
         },
         code = {
             width = "block",
