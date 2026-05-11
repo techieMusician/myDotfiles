@@ -1,6 +1,7 @@
 return {
   {  "nvim-treesitter/nvim-treesitter",
   branch = "main",
+  lazy = false,
   build = ":TSUpdate",
   config = function()
     local config = require("nvim-treesitter")
@@ -8,7 +9,6 @@ return {
       auto_install = true,
       highlight = { enable = true },
       indent = { enable = true },
-      ignore_install = { "latex" },
       })
   end,
   },
