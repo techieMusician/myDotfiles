@@ -43,5 +43,5 @@ return {
   })
   end,
 },
-{ 'Django0033/mythic.nvim' }
+{ 'techieMusician/mythic.nvim' }
 }
