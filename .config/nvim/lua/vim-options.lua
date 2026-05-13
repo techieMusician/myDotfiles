@@ -13,3 +13,6 @@ vim.cmd("set clipboard=unnamed")
 vim.lsp.log.set_level("off") -- Or "warn", "error", "off"
 -- vim.g.vinfo_repo_path = "/usr/share/info"
 -- vim.g.infoprg = "info"
+
+-- Settings for auto-session
+vim.o.sessionoptions = "blank,buffers,curdir,folds,help,tabpages,winsize,winpos,terminal,localoptions"
