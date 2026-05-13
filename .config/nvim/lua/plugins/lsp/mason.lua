@@ -4,7 +4,8 @@ return {
         ensure_installed = {
         "lua_ls",
         "rust_analyzer",
-        "marksman",
+--        "marksman",
+        "markdown_oxide",
         "html",
         "cssls",
         "ts_ls",
