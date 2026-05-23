@@ -1,5 +1,3 @@
 require('core/configs')
 require('core/autocmds')
 require('core/keymaps')
-require('plugins/which-key')
-require('plugins/mason')
