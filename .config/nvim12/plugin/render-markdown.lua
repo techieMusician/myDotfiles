@@ -6,8 +6,6 @@ vim.pack.add({
     'https://github.com/MeanderingProgrammer/render-markdown.nvim',
 })
 require('render-markdown').setup({
-
-    opts = {
         indent = {
             -- Mimic org-indent-mode behavior by indenting everything under a heading based on the
             -- level of the heading. Indenting starts from level 2 headings onward by default.
@@ -44,5 +42,4 @@ require('render-markdown').setup({
             left_pad = 2,
             right_pad = 2,
         },
-    },
 }) -- only mandatory if you want to set custom options
