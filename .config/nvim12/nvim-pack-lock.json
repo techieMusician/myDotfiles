@@ -4,6 +4,10 @@
       "rev": "426dbebe06b5c69fd846ceb17b42e12f890aedf1",
       "src": "https://github.com/catppuccin/nvim"
     },
+    "lonelog.nvim": {
+      "rev": "fa8c16aaeff082ed104a33dad555be1c9a586034",
+      "src": "https://github.com/Django0033/lonelog.nvim"
+    },
     "mason.nvim": {
       "rev": "bb639d4bf385a4d89f478b83af4d770be05ab7eb",
       "src": "https://github.com/mason-org/mason.nvim"
@@ -15,6 +19,10 @@
     "mini.nvim": {
       "rev": "a405061478d8027b4e21214d897ce1eb33115792",
       "src": "https://github.com/nvim-mini/mini.nvim"
+    },
+    "mythic.nvim": {
+      "rev": "86113ad12a81039909869d605f7f9a99b1dafb37",
+      "src": "https://github.com/TechieMusician/mythic.nvim"
     },
     "nvim-treesitter": {
       "rev": "4916d6592ede8c07973490d9322f187e07dfefac",
