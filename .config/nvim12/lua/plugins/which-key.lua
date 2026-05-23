@@ -1,10 +1,5 @@
-
 vim.pack.add({
-    { src = "https://github.com/mason-org/mason.nvim" },
-})
-
-require("mason").setup({})
-
-vim.pack.add({
-	{ src = "https://github.com/folke/which-key.nvim" },
+    "https://github.com/nvim-mini/mini.icons",
+    "https://github.com/nvim-tree/nvim-web-devicons",
+    "https://github.com/folke/which-key.nvim" 
 })

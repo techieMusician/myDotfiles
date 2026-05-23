@@ -5,6 +5,3 @@ vim.pack.add({
 
 require("mason").setup({})
 
-vim.pack.add({
-	{ src = "https://github.com/folke/which-key.nvim" },
-})
