@@ -24,6 +24,10 @@
       "rev": "86113ad12a81039909869d605f7f9a99b1dafb37",
       "src": "https://github.com/TechieMusician/mythic.nvim"
     },
+    "nvim-lilypond-suite": {
+      "rev": "e57ced9e0df33773566af795d70919d577c58ce2",
+      "src": "https://github.com/martineausimon/nvim-lilypond-suite"
+    },
     "nvim-treesitter": {
       "rev": "4916d6592ede8c07973490d9322f187e07dfefac",
       "src": "https://github.com/nvim-treesitter/nvim-treesitter"
