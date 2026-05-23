@@ -5,16 +5,14 @@ vim.pack.add({
 })
 
 require("telescope").setup({
-    keys = {
-      { "<leader>f", desc = "Find" },
-      { "<leader>ff", "<cmd>Telescope find_files<CR>", desc = "Find Files" },
-      { "<leader>fg", "<cmd>Telescope live_grep<CR>",  desc = "Serch File Contents With RipGrep" },
-      { "<leader>fb", "<cmd>Telescope buffers<CR>",    desc = "Search Buffers" },
-      { "<leader>fh", "<cmd>Telescope help_tags<CR>",  desc = "Search Help Tags" },
-    },
     extensions = {
         ["ui-select"] = {
             require("telescope.themes").get_dropdown({}),
         },
     },
 })
+local builtin = require('telescope.builtin')
+vim.keymap.set('n', '<leader>ff', builtin.find_files, { desc = 'Telescope find files' })
+vim.keymap.set('n', '<leader>fg', builtin.live_grep, { desc = 'Telescope live grep' })
+vim.keymap.set('n', '<leader>fb', builtin.buffers, { desc = 'Telescope buffers' })
+vim.keymap.set('n', '<leader>fh', builtin.help_tags, { desc = 'Telescope help tags' })
