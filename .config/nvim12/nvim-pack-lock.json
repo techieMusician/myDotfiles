@@ -20,6 +20,10 @@
       "rev": "a405061478d8027b4e21214d897ce1eb33115792",
       "src": "https://github.com/nvim-mini/mini.nvim"
     },
+    "mkdnflow.nvim": {
+      "rev": "f20732686f70f60f18f09f4befe984ae63a99201",
+      "src": "https://github.com/jakewvincent/mkdnflow.nvim"
+    },
     "mythic.nvim": {
       "rev": "86113ad12a81039909869d605f7f9a99b1dafb37",
       "src": "https://github.com/TechieMusician/mythic.nvim"
