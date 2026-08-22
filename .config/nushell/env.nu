@@ -16,3 +16,4 @@
 #
 # You can remove these comments if you want or leave
 # them for future reference.
+$env.PATH = ($env.PATH | append '/home/mike/.local/bin')
